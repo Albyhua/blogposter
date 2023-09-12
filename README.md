@@ -21,7 +21,7 @@ To use this application, ensure you have cloned this repository and have Node.js
 
 ## Credits
 
-A special thanks to Megan Meyers for allowing me to use her api that allowed me to generate comments/blogs/users! Check her her github
+A special thanks to Megan Meyers for allowing me to use her api that allowed me to generate comments/blogs/users! Check her her [github](https://github.com/femke77)
 
 ## License
 
