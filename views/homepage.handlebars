@@ -1,0 +1,13 @@
+<div class="post">
+  {{#each blogPosts}}
+    <div class="card">
+      <div class="header">
+        <h2><a href="/blogpost/{{id}}">{{title}}</a></h2>
+        <div>posted by: {{user.username}} on {{createdAt}}</div>
+      </div>
+      <div class="cardBody">{{content}}</div>
+    </div>
+  {{/each}}
+</div>
+
+<script src="/js/login.js"></script>

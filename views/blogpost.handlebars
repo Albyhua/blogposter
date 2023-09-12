@@ -1,0 +1,33 @@
+<section class="blogPost">
+  <div>
+    <input type="hidden" id="post-id" value="{{id}}" />
+    <h2>{{title}}</h2>
+    <div>posted by: {{user.username}} on {{createdAt}}</div>
+  </div>
+  <div class="blogBody">
+    {{content}}
+  </div>
+  {{#if comments}}
+    <h2>Comments</h2>
+    {{#each comments}}
+      <div class="commentBox">
+        <div class="commentAuthor">posted by:
+          {{user.username}}
+          on
+          {{createdAt}}</div>
+        <div class="commentBody">{{comment}}</div>
+      </div>
+
+    {{/each}}
+  {{/if}}
+  <h3>Add a comment</h3>
+  <form id="commentForm">
+    <textarea name="newComment" id="newcomment" cols="30" rows="3">
+
+    </textarea>
+    <button type="submit" class="saveComment">Save</button>
+  </form>
+
+</section>
+
+<script src="/js/comment.js"></script>

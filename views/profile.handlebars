@@ -1,0 +1,27 @@
+<div>
+  <button id="new-post">New Post</button>
+
+  {{#if blogPost.length}}
+    <div>
+      <h3>Your blogPost</h3>
+      {{#each blogPost}}
+        <section class="blogPost">
+          <div>
+            <h2>Today's post</h2>
+          </div>
+          <div class="blogBody">
+            {{this.content}}
+
+            <div>
+              <button class="delete-post" id="delete-post">Delete</button>
+              <button class="edit-post" id="edit-post">Edit</button>
+            </div>
+          </div>
+        </section>
+      {{/each}}
+    </div>
+  {{/if}}
+
+  <script src="/js/blogpost.js"></script>
+  <script src="/js/profile.js"></script>
+</div>

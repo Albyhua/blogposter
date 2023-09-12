@@ -1,0 +1,34 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Posters</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Blog posters!</h1>
+    </header>
+    <nav>
+      <div class="homeHeader">
+        <a>Welcome</a>
+      </div>
+      {{#if loggedIn}}
+        <a href="/profile" class="href">
+          <button class="logged">Logout</button></a>
+      {{else}}
+        <a href="/login" class="href">
+          <button class="login">Login</button></a>
+      {{/if}}
+    </nav>
+    <main>
+      {{{body}}}
+    </main>
+
+    {{! allows user to sign out }}
+    {{#if loggedIn}}
+      <script src="/js/logout.js"></script>
+    {{/if}}
+  </body>
+</html>
