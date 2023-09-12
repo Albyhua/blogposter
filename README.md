@@ -19,6 +19,8 @@ To use this application, ensure you have cloned this repository and have Node.js
 
 1. Click the link below and make an account to login to start posting on the blog board!
 
+[Blog Post!](https://dragonfruit-12-7d12769a6377.herokuapp.com/)
+
 ## Credits
 
 A special thanks to Megan Meyers for allowing me to use her api that allowed me to generate comments/blogs/users! Check her her [github](https://github.com/femke77)
